@@ -1,0 +1,44 @@
+.navbar-principal-container {
+    display: flex;
+    width: 1116px;
+    height: 48px;
+    padding: 8px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(236, 236, 236, 0.20);
+    box-shadow: 4px 5px 2px -3px rgba(255, 255, 255, 0.20) inset, 0px -1px 1px 1px rgba(255, 255, 255, 0.08) inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px 24px 30px 0px rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.navbar-chips-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.navbar-button {
+    align-items: center;
+    color: #00000080;
+    display: flex;
+    font-family: "Albert Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 8px;
+    height: 45px;
+    padding: 8px;
+    justify-content: center;
+    line-height: 150%; /* 21px */
+    text-align: center;
+    text-transform: uppercase;
+}
