@@ -1,0 +1,13 @@
+.aboutme-wrapper {
+    background-image: url('/black-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed; /* Isso garante que o background cubra toda a viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
