@@ -2,12 +2,103 @@
     background-image: url('/black-background.svg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     min-height: 100vh;
     width: 100%;
-    position: fixed; /* Isso garante que o background cubra toda a viewport */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: auto;
+}
+
+.aboutme-page-container {
+    position: relative;
+    padding-top: 104px;
+    padding-left: 124px;
+    padding-bottom: 40px;
+    min-height: 100%;
+}
+
+.aboutme-tittle {
+    color: var(--green-30, var(--green, #E2F163));
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+}
+
+.aboutme-description-container {
+    display: flex;
+    max-width: 1120px;
+    width: calc(100% - 48px);
+    padding: 32px 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+    
+    border-radius: 16px;
+    background: rgba(226, 241, 99, 0.10);
+    box-shadow: 2.174px 2.718px 1.087px -1.631px rgba(255, 255, 255, 0.20) inset,
+                0px -0.544px 0.544px 0.544px rgba(255, 255, 255, 0.08) inset,
+                0px 0.544px 0.544px 0.544px rgba(255, 255, 255, 0.25) inset,
+                0px 13.045px 16.307px 0px rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(27.17751693725586px);
+    backdrop-filter: blur(27.17751693725586px);
+}
+
+.aboutme-text {
+    color: #FFFFFF;
+    max-width: 272px;
+    white-space: pre-line;
+    text-align: left;
+    font-family: "Albert Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.airplanes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    margin-left: -5vw;
+    margin-top: 40px;
+    width: calc(100% + 80px);
+}
+
+.aboutme-figures {
+    scale: 0.8;
+    margin-top: 20px;
+    left: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .aboutme-page-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .aboutme-description-container {
+        flex-direction: column;
+        align-items: stretch;
+        width: calc(100% - 32px);
+        padding: 24px 16px;
+    }
+
+    .aboutme-text {
+        max-width: 100%;
+    }
 }
